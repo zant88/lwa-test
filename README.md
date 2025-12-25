@@ -30,12 +30,35 @@ In this application, there are 2 branches. The main branch is the code to accomp
 
 For main branch, the endpoints are :
 - `POST /api/users` - Create new user
+  ```json
+  {
+      "email": "emailtest@gmail.com",
+      "password": "password",
+      "name": "Merah Putih"
+  }
+  ```
+  *Note: This is just an example*
 - `GET /api/users` - List users
 
 For feat_login, the endpoints are :
 - `POST /api/login` - Authenticate and receive token (PUBLIC)
+  ```json
+  {
+      "email": "admin@gmail.com",
+      "password": "password"
+  }
+  ```
+  *Note: This is just an example*
 - `POST /api/logout` - Revoke current token (require Bearer token)
 - `POST /api/users` - Create new user (require Bearer token)
+  ```json
+  {
+      "email": "emailtest@gmail.com",
+      "password": "password",
+      "name": "Merah Putih"
+  }
+  ```
+  *Note: This is just an example*
 - `GET /api/users` - List users (require Bearer token)
 
 
