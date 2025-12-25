@@ -18,7 +18,7 @@ This approuch ensures the application is easy to test, maintain and scale.
 1. Install dependencies: `composer install`
 2. Configure database in `.env`
 3. Run migrations: `php artisan migrate`
-4. Create admin user: `php artisan admin:create`
+4. If you are in feat_login branch, create admin user: `php artisan admin:create`
 5. Start server: `php artisan serve`
 
 ## Authentication
